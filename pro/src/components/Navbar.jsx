@@ -34,7 +34,7 @@ const Navbar = () => {
                     textDecoration: "none",
                     color: "white"
                 }}>
-                    <h1>Registration Form</h1>
+                    <h1>REGISTRATION FORM</h1>
                 </Link>
             </div>
         </div>
