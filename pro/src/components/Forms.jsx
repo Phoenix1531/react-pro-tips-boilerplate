@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Forms = () => {
     const[formSubmit,setFormSubmit]=useState(false)
@@ -24,9 +26,11 @@ const Forms = () => {
         setFormerr(errors)
         let arrkeyArray=Object.keys(errors)
         if(arrkeyArray.length===0){
+            toast("Registration successful!")
             setFormSubmit(true)
         }else{
             setFormSubmit(false)
+            toast("Registration not successful")
         }
     }
     const validate=(data)=>{
@@ -50,13 +54,13 @@ const Forms = () => {
     }
     return (
         <div className='form-container'>
+            <ToastContainer />
             <fieldset>
                 <legend>Fill This Form</legend>
                 <form action="">
                     {formSubmit && <div className='success'>
                         <p>Registration Successful</p>
                     </div> }
-                    
                     <label>First Name : </label>
                     <input type="text" name='firstName' onChange={handleInputChange}/>
                     {formError.firstName && <p className='err'>{formError.firstName}</p>}
