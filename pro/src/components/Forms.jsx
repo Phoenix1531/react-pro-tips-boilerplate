@@ -43,7 +43,10 @@ const Forms = () => {
         }
         if (data.email.trim()==""){
             error.email="Please enter your email"
-        }
+        } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(data.email.trim())) {
+            error.email = 'Please enter a valid email';
+            // toast('Please enter a valid 10-digit Phone number');
+          }
         if (data.phone.trim()==""){
             error.phone="Please enter your Phone number"
         }

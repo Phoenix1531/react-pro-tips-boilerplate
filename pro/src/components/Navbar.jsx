@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <div style={{
+        <div id='navbar-container' style={{
             display: "flex",
             justifyContent: "space-between",
             width: "100%",

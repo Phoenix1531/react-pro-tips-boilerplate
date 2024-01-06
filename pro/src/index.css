@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&family=Fira+Sans&family=Inria+Sans&family=Italianno&family=Lora&family=Montserrat:wght@500&family=Open+Sans:wght@300;400&family=Phudu:wght@300;400&family=Playfair+Display&family=Poppins:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&family=Rubik&family=Titillium+Web:ital,wght@1,200;1,300&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -5,4 +7,7 @@
 }
 h1{
   cursor: pointer;
+}
+#navbar-container{
+  font-family: 'Roboto', sans-serif;
 }
